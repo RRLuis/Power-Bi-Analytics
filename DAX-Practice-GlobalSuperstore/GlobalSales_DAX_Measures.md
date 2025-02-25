@@ -1,6 +1,9 @@
 -- ============================
+
 SAMPLE OF DAX MEASURES APPLIED TO "GLOBAL SUPERSTORE" DATASET
+
 Data Source: https://www.kaggle.com/datasets/shekpaul/global-superstore
+
 -- ============================
 
 -- 1. Total Sales
