@@ -136,6 +136,8 @@ Build an end-to-end workflow to:
 
         Explore the interactive dashboard.
 
+ ![image alt](https://github.com/RRLuis/Power-Bi-Analytics/blob/main/Forex_Analysis_EUR&USD/Forex_Analysis_db_diagram.png?raw=true)
+
 
 ## Project Structure
 
