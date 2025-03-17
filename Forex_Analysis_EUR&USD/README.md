@@ -120,19 +120,20 @@ Build an end-to-end workflow to:
 ### 4. Open the Power BI File:
 
         Load the processed data into Power BI.
+	
 		Files to Upload to Power BI and How They Are Connected
 
-        		processed_eur_usd_data_with_log.csv: Contains historical exchange rates with logarithmic transformations.
+        			processed_eur_usd_data_with_log.csv: Contains historical exchange rates with logarithmic transformations.
 
-        		future_predictions.csv: Contains predicted exchange rates for 3 future periods.
+        			future_predictions.csv: Contains predicted exchange rates for 3 future periods.
 
-        		metrics.csv: Contains model performance metrics (MAE, R²).
+        			metrics.csv: Contains model performance metrics (MAE, R²).
 
     		How They Are Connected:
 
-        		Relationship: Connect processed_eur_usd_data_with_log and future_predictions using the Date column.
+        			Relationship: Connect processed_eur_usd_data_with_log and future_predictions using the Date column.
 
-        		Metrics Table: No relationship needed; use it directly for displaying MAE and R² in cards.
+        			Metrics Table: No relationship needed; use it directly for displaying MAE and R² in cards.
 
         Explore the interactive dashboard.
 
