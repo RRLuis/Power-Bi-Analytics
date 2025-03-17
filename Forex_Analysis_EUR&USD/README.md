@@ -1,9 +1,9 @@
-Exchange Rate Analysis and Forecasting
-Project Overview
+# Exchange Rate Analysis and Forecasting (Python and Power Bi)
+## Project Overview
 
 This project focuses on analyzing and visualizing exchange rate data for a currency pair (USD/EUR) using Python for data processing, modeling, and Power BI for interactive dashboard creation. The workflow includes data preparation, exploratory data analysis (EDA), logarithmic transformations, regression modeling, and forecasting future exchange rates. The final deliverable is an interactive Power BI dashboard that presents insights, predictions, and model performance metrics.
 
-Objective
+## Objective
 
 Build an end-to-end workflow to:
 
@@ -15,9 +15,9 @@ Build an end-to-end workflow to:
 
     Visualize insights and predictions in an interactive Power BI dashboard.
 
-Project Steps
+## Project Steps
 
-1. Data Preparation
+### 1. Data Preparation
 
     Fetch historical exchange rate data for the last 2 years using the yfinance API.
 
@@ -31,7 +31,7 @@ Project Steps
 
     Create a copy of the original dataframe with the date column as the index.
 
-2. Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA)
 
     Compare original exchange rates with their logarithmic transformations.
 
@@ -45,7 +45,7 @@ Project Steps
 
     Remove duplicates.
 
-3. Modeling
+### 3. Modeling
 
     Train a linear regression model to predict future log-transformed exchange rates.
 
@@ -53,7 +53,7 @@ Project Steps
 
     Save predictions and evaluation metrics (R², MAE, etc.).
 
-4. Dashboard Design
+### 4. Dashboard Design
 
     Import processed data into Power BI.
 
@@ -67,7 +67,7 @@ Project Steps
 
         Filters for exploration by date or other dimensions.
 
-Deliverables
+## Deliverables
 
     Python Script Files (.py): "Forex-Analysis-EURUSD_Script_File.py"
 
@@ -75,7 +75,7 @@ Deliverables
 
     Power BI File (.pbix): "Forex_Analysis_EURUSD_Dashboard.pbix"
 
-Tools and Technologies
+## Tools and Technologies
 
     Python Libraries:
 
@@ -89,35 +89,35 @@ Tools and Technologies
 
     Power BI:
 	Data loading and transformation (Power Query).
+ 
  	Creation of a date table and relationships between tables.
+  
   	Development of measures and calculated columns using DAX.
+   
   	Design of interactive visualizations:
     		Line charts for historical trends and predictions.
     		Histograms for distribution analysis.
     		Cards for model performance metrics (MAE, R²).
-  		Implementation of filters for dynamic exploration.
+  			Implementation of filters for dynamic exploration.
 
-How to Use This Project
+## How to Use This Project
 
-    Clone the Repository:
-    bash
-    Copy
+### 1. Clone the Repository:
+    git clone https://github.com/RRLuis/Power-Bi-Analytics.git
 
-    git clone https://github.com/your-username/exchange-rate-analysis.git
+    -Navigate to project folder
+    
+    cd Power-Bi-Analytics/Forex_Analysis_EUR&USD
 
-    Install Dependencies:
-    bash
-    Copy
-
+### 2. Install Dependencies:
     pip install -r requirements.txt
 
-    Run the Python Script:
-
+### 3. Run the Python Script:
         Execute the script to fetch data, perform EDA, and train the model.
 
         Save the processed data and predictions.
 
-    Open the Power BI File:
+### 4. Open the Power BI File:
 
         Load the processed data into Power BI.
 		Files to Upload to Power BI and How They Are Connected
@@ -137,29 +137,45 @@ How to Use This Project
         Explore the interactive dashboard.
 
 
-Project Structure
-Copy
+## Project Structure
 
 exchange-rate-analysis/
+
 │
+
 ├── data/
+
 │   ├── raw_eur_usd_data.csv          # Raw exchange rate data
+
 │   ├── processed_eur_usd_data.csv    # Processed data with transformations
+
 │   └── future_predictions.csv        # Predicted exchange rates
+
 │
+
 ├── scripts/
+
 │   ├── data_preparation.py           # Data fetching and cleaning
+
 │   ├── eda.py                        # Exploratory data analysis
+
 │   └── modeling.py                   # Regression modeling and predictions
+
 │
+
 ├── dashboard/
+
 │   └── exchange_rate_dashboard.pbix  # Power BI dashboard
+
 │
+
 ├── README.md                         # Project documentation
+
 └── requirements.txt                  # Python dependencies
 
 
-Key Insights
+
+## Key Insights
 
     Logarithmic Transformation: Helps stabilize variance and normalize data distribution.
 
@@ -167,6 +183,3 @@ Key Insights
 
     Power BI Dashboard: Provides interactive visualizations for historical trends, predictions, and model performance.
 
-Contributing
-
-Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
